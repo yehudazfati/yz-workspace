@@ -23,7 +23,7 @@ pipelines:
             - npx nx affected --base=origin/master -t lint test build
 
   branches:
-    master:
+    main:
       - step:
           name: 'Build and test affected apps on "master" branch changes'
           script:
